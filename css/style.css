@@ -26,13 +26,28 @@ body{
 
 /* Estilos del header */
 header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     border: 1px solid  black;
     margin: 2px 2px;
+    position: relative;
 }
 
-header nav{    
-    text-align: center;
+.header_logo{
+    display: flex;
+    align-self:baseline;
+    width: 90px;
+    margin-bottom: 0px;    
 }
+
+
+header nav{    
+    display: flex;
+    text-align: center;
+    align-self: flex-end;
+}
+
 
 header nav ul{
     list-style: none;
@@ -51,14 +66,11 @@ header nav ul li a{
 }
 
 .nav_secundario{
-    text-align: right;
+    display: flex;
+    align-self: flex-start;
 }
 
 
-.header_logo{
-    width: 90px;
-    margin-bottom: 0px;    
-}
 
 /*-------------------------------------------------------------------*/
 /*-------------------------------------------------------------------*/
