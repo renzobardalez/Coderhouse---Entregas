@@ -11,19 +11,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 /* Estilos del body (todo el archivo) */
 body{
     background-color:#FFFFFF;
     font-family: 'Roboto'
     ;
 }
-
 /*-------------------------------------------------------------------*/
 /*-------------------------------------------------------------------*/
 /*-------------------------------------------------------------------*/
 /*-------------------------------------------------------------------*/
-
 /* Estilos del header */
 header{
     display: flex;
@@ -33,21 +30,18 @@ header{
     margin: 2px 2px;
     position: relative;
 }
-
 header .header_logo{
     display: block;
     align-self:baseline;
     width: 90px;
     margin-bottom: 0px;    
 }
-
 header nav{    
     display: none;
     text-align: center;
     align-self:center;
     padding-right: 20px;
 }
-
 header nav ul{
     display: flex;
     gap: 20px;
@@ -55,17 +49,14 @@ header nav ul{
     padding: 0px;
     margin: 5px;
 }
-
 header nav ul li a{
     text-decoration: none;
     color: #000;
 }
-
 header .nav_secundario{
     display: flex;
     align-self: flex-start;
 } 
-
 /*-------------------------------------------------------------------*/
 /*-------------------------------------------------------------------*/
 /*-------------------------------------------------------------------*/
@@ -76,7 +67,6 @@ main{
     border: 1px solid  black;
     margin: 2px 2px;
 }
-
 main {
     border: 1px solid  black;
     margin: 2px 2px;    
@@ -84,7 +74,6 @@ main {
     grid-template-columns: 1fr;
     gap: 15px;
 }
-
 .container-gallery{
     border: 1px solid  black;
     margin: 2px 2px;    
@@ -92,53 +81,42 @@ main {
     grid-template-columns: 1fr;
     gap: 15px;
 }
-
 .container-about-us{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
 }
-
 main div img{
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-
 .home_img5{
     display: none;
 }
-
 .home_img6{
     display: none;
 }
-
 main h1{
     margin: 10px;
 }
-
 p{
     margin: 10px 5px;
 }
-
 form{
     margin: 5px;
 }
-
 .contact-us_form{
     margin: 5px;
     padding: 5px;
 }
-
 .form_label {
     display: block; /* Hace que el label sea un bloque */
     margin-bottom: 10px;
 }
-
 /*-------------------------------------------------------------------*/
 /*-------------------------------------------------------------------*/
 /*-------------------------------------------------------------------*/
 /*-------------------------------------------------------------------*/
-
 /* Estilos del footer */
 footer{
     display: flex;
@@ -146,36 +124,30 @@ footer{
     margin: 2px 2px;
     text-align: center;
 }
-
 footer p{
     display: flex;
     margin: 10px;
     font-size: small;
 }
-
 .ig_footer_icon {
     display: flex;
     width: 30px;
     margin: 5px;
 }
-
 .fb_footer_icon {
     display: flex;
     width: 30px;
     margin: 5px;    
 }
-
 /*-------------------------------------------------------------------*/
 /*-------------------------------------------------------------------*/
 /*-------------------------- MEDIA QUERY ----------------------------*/
 /*-------------------------------------------------------------------*/
 /*-------------------------------------------------------------------*/
-
 /* Para pantalla como mínimo 768 px en adelante */
 @media screen and (min-width: 768px){
     
     body{font-size: 1.25rem;}
-    
     header nav{    
         display: flex;
         text-align: center;
@@ -192,27 +164,21 @@ footer p{
     main .home_img6{
         display: block;
     }
-    
     .container-gallery{
         grid-template-columns: 1fr 1fr 1fr;
         gap: 15px;
     }
-
     .container-about-us{
         display: grid;
         grid-template-columns: 60% 40%;
         align-items: center;
     }
-
     .p-about-us{
         align-self: center;
     }
-
     .img-about-us{
         height: 100%;
         width: 100%;
         object-fit: cover;
 }
-
-
 }
