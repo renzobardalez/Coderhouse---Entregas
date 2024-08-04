@@ -6,7 +6,7 @@
 
 /* Reseteo del estilo nativo del navegador*/
 
-*{
+*{  
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -34,30 +34,26 @@ header{
     position: relative;
 }
 
-.header_logo{
-    display: flex;
+header .header_logo{
+    display: block;
     align-self:baseline;
     width: 90px;
     margin-bottom: 0px;    
 }
 
-
 header nav{    
-    display: flex;
+    display: none;
     text-align: center;
-    align-self: flex-end;
+    align-self:center;
+    padding-right: 20px;
 }
 
-
 header nav ul{
+    display: flex;
+    gap: 20px;
     list-style: none;
     padding: 0px;
     margin: 5px;
-}
-
-header nav ul li{
-    display: inline-block;
-    margin-right: 20px;
 }
 
 header nav ul li a{
@@ -65,12 +61,10 @@ header nav ul li a{
     color: #000;
 }
 
-.nav_secundario{
+header .nav_secundario{
     display: flex;
     align-self: flex-start;
-}
-
-
+} 
 
 /*-------------------------------------------------------------------*/
 /*-------------------------------------------------------------------*/
@@ -80,26 +74,45 @@ header nav ul li a{
 /* Estilos del main */
 main{
     border: 1px solid  black;
+    margin: 2px 2px;
+}
+
+main {
+    border: 1px solid  black;
     margin: 2px 2px;    
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
 }
 
-.home_img{
-    display: inline-block;
-    height: 400px;
-    width: auto;
-    padding: 20px;
-
+.container-gallery{
+    border: 1px solid  black;
+    margin: 2px 2px;    
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
 }
 
-
-.img_products{
-    display: inline-block;
-    height: 350px;
-    width: auto;
-    padding: 10px;
+.container-about-us{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
 }
 
-h1{
+main div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.home_img5{
+    display: none;
+}
+
+.home_img6{
+    display: none;
+}
+
+main h1{
     margin: 10px;
 }
 
@@ -128,21 +141,78 @@ form{
 
 /* Estilos del footer */
 footer{
+    display: flex;
     border: 1px solid  black;
     margin: 2px 2px;
+    text-align: center;
 }
 
 footer p{
+    display: flex;
     margin: 10px;
     font-size: small;
 }
+
 .ig_footer_icon {
+    display: flex;
     width: 30px;
     margin: 5px;
 }
 
 .fb_footer_icon {
+    display: flex;
     width: 30px;
     margin: 5px;    
 }
 
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*-------------------------- MEDIA QUERY ----------------------------*/
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+
+/* Para pantalla como mínimo 768 px en adelante */
+@media screen and (min-width: 768px){
+    
+    body{font-size: 1.25rem;}
+    
+    header nav{    
+        display: flex;
+        text-align: center;
+        align-self:flex-end;
+        padding-right: 20px;
+    }
+    header .nav_secundario{
+        display: flex;
+        align-self: flex-start;
+    } 
+    main .home_img5{
+        display: block;
+    }
+    main .home_img6{
+        display: block;
+    }
+    
+    .container-gallery{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+    }
+
+    .container-about-us{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        align-items: center;
+    }
+
+    .p-about-us{
+        align-self: center;
+    }
+
+    .img-about-us{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+}
+
+
+}
