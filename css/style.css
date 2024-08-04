@@ -22,41 +22,50 @@ body{
 /*-------------------------------------------------------------------*/
 /*-------------------------------------------------------------------*/
 /* Estilos del header */
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+
+.cotainer-header{
+    display: grid;
     border: 1px solid  black;
     margin: 2px 2px;
-    position: relative;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: 
+    "logo sec-nav"
+    "logo sec-nav"
+    "logo sec-nav";
 }
-header .header_logo{
-    display: block;
-    align-self:baseline;
-    width: 90px;
-    margin-bottom: 0px;    
+.header-logo{
+    grid-area: logo;
+    align-self: center;
+    justify-self: left;
 }
-header nav{    
+.header-main-nav{
     display: none;
-    text-align: center;
-    align-self:center;
-    padding-right: 20px;
+}
+.header-sec-nav{
+    grid-area: sec-nav;
+    align-self: self-start;
+    justify-self: right;
+    padding: 10px;
+}
+header .logo{
+    display: block;
+    width: 90px;
 }
 header nav ul{
     display: flex;
-    gap: 20px;
+    gap: 10px;
     list-style: none;
     padding: 0px;
-    margin: 5px;
+    margin: 0px;
+    ;
 }
 header nav ul li a{
     text-decoration: none;
+    white-space: nowrap;
     color: #000;
 }
-header .nav_secundario{
-    display: flex;
-    align-self: flex-start;
-} 
+
 /*-------------------------------------------------------------------*/
 /*-------------------------------------------------------------------*/
 /*-------------------------------------------------------------------*/
@@ -96,19 +105,13 @@ main div img{
 .home_img6{
     display: none;
 }
-main h1{
-    margin: 10px;
-}
-contenedor
-p{
-    margin: 10px 5px;
-}
+
 form{
     margin: 5px;
 }
 .contact-us_form{
-    margin: 5px;
-    padding: 5px;
+    margin: 0px;
+    padding: 0px;
 }
 .form_label {
     display: block; /* Hace que el label sea un bloque */
@@ -124,6 +127,7 @@ footer{
     display: flex;
     border: 1px solid  black;
     margin: 2px 2px;
+    justify-content: center;
     text-align: center;
 }
 footer p{
@@ -150,16 +154,31 @@ footer p{
 @media screen and (min-width: 768px){
     
     body{font-size: 1.25rem;}
-    header nav{    
-        display: flex;
-        text-align: center;
-        align-self:flex-end;
-        padding-right: 20px;
+    .cotainer-header{
+        display: grid;
+        border: 1px solid  black;
+        margin: 2px 2px;
+        justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "logo main-nav sec-nav"
+        "logo main-nav sec-nav"
+        "logo main-nav sec-nav";
     }
-    header .nav_secundario{
-        display: flex;
-        align-self: flex-start;
-    } 
+    .header-logo{
+        grid-area: logo;
+    }
+    .header-main-nav{
+        display: block;
+        grid-area: main-nav;
+        align-self:self-end;
+        justify-self: center;
+    }
+    .header-sec-nav{
+        grid-area: sec-nav;
+        align-self: self-start;
+    }
     main .home_img5{
         display: block;
     }
