@@ -1,0 +1,60 @@
+@import "../utilities/variables";
+// Mixin
+
+//@mixin flex{}
+
+
+//@mixin grid{}
+
+
+@mixin header{
+    border: 1px solid  $color-bordes;
+    margin: 2px 2px;
+}
+@mixin nav-ul{
+    display: flex;
+    gap: $gap-nav;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+@mixin nav-li{
+    color: $color-letras;
+    display: grid;
+    place-content: center;
+    margin: 0;
+}
+@mixin nav-a{
+    text-decoration: none;
+    white-space: nowrap;
+    color: $color-letras;
+}
+@mixin main{
+    border: 1px solid $color-bordes;
+    margin: 2px 2px;    
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $gap-img;
+}
+@mixin img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+@mixin footer{
+    display: flex;
+    border: 1px solid  $color-bordes;
+    margin: 2px 2px;
+    justify-content: center;
+    text-align: center;
+}
+@mixin footer-icon {
+    display: flex;
+    width: 30px;
+    margin: 5px; 
+}
+@mixin footer-p{
+    display: flex;
+    margin: 10px;
+    font-size: small;
+}

@@ -1,0 +1,61 @@
+@import "../utilities/_variables";
+@import "../utilities/_mixin";
+@import "../utilities/_map";
+// Estilos del main
+
+main {
+    @include main;
+    div {
+            img{
+                @include img
+            }
+    }        
+}
+.container-gallery{
+    @include main;
+}
+.container-about-us{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+.home_img5, .home_img6{
+    display: none;
+}
+form{
+    margin: 5px;
+}
+.contact-us_form{
+    margin: 0px;
+    padding: 0px;
+}
+.form_label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+@media screen and (min-width: medida(tablet)){
+        main .home_img5{
+            display: block;
+        }
+        main .home_img6{
+            display: block;
+        }
+        .container-gallery{
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+        }
+        .container-about-us{
+            display: grid;
+            grid-template-columns: 60% 40%;
+            align-items: center;
+        }
+        .p-about-us{
+            align-self: center;
+        }
+        .img-about-us{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }

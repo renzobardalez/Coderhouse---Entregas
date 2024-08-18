@@ -1,0 +1,12 @@
+@import "../utilities/_variables";
+@import "../utilities/_mixin";
+// Estilos del footer
+footer{
+    @include footer;
+}
+footer p{
+    @include footer-p;
+}
+.ig_footer_icon, .fb_footer_icon {
+    @include footer-icon;
+}

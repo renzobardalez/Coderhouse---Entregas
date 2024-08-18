@@ -7,8 +7,8 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "entrega-2---bardalez-renzo": "file:"
-  }
+  },
+  "description": ""
 }
