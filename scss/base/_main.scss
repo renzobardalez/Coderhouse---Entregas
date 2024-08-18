@@ -33,8 +33,38 @@ form{
     margin-bottom: 10px;
 }
 
-
-@media screen and (min-width: medida(tablet)){
+    @media screen and (min-width: medida(tablet)){
+        main .home_img4{
+            display: none;
+        }
+        main .home_img5{
+            display: none;
+        }
+        main .home_img6{
+            display: none;
+        }
+        .container-gallery{
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+        }
+        .container-about-us{
+            display: grid;
+            grid-template-columns: 60% 40%;
+            align-items: center;
+        }
+        .p-about-us{
+            align-self: center;
+        }
+        .img-about-us{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+@media screen and (min-width: medida(desktop)){
+        main .home_img4{
+            display: block;
+        }
         main .home_img5{
             display: block;
         }
