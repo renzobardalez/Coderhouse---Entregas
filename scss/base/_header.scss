@@ -1,0 +1,55 @@
+@import "../utilities/variables";
+//Estilos del header
+header {
+        nav{
+            ul{
+                display: flex;
+                gap: $gap-nav;
+                list-style: none;
+                padding: 0px;
+                margin: 0px;
+                li{
+                    color: $color-letras;
+                    display: grid;
+                    place-content: center;
+                    margin: 0;
+                    a{
+                        text-decoration: none;
+                        white-space: nowrap;
+                        color: $color-letras;
+                    }
+                }
+            }
+        }
+}
+
+// Diseño del nav
+.cotainer-header{
+    display: grid;
+    border: 1px solid  $color-bordes;
+    margin: 2px 2px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: 
+    "logo sec-nav"
+    "logo sec-nav"
+    "logo sec-nav";
+}
+.header-logo{
+    grid-area: logo;
+    align-self: center;
+    justify-self: left;
+}
+.header-main-nav{
+    display: none;
+}
+.header-sec-nav{
+    grid-area: sec-nav;
+    align-self: self-start;
+    justify-self: right;
+    padding: 10px;
+}
+header .logo{
+    display: block;
+    width: 90px;
+}

@@ -1,79 +1,8 @@
-/* CSS del proyecto*/
 
-/* Cuando se quiere importar una fuente de google fonts se debe poner al inicio de todo */
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-/* Reseteo del estilo nativo del navegador*/
-
-*{  
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-/* Estilos del body (todo el archivo) */
-body{
-    background-color:#FFFFFF;
-    font-family: 'Roboto'
-    ;
-}
 /*-------------------------------------------------------------------*/
 /*-------------------------------------------------------------------*/
 /*-------------------------------------------------------------------*/
 /*-------------------------------------------------------------------*/
-/* Estilos del header */
-
-.cotainer-header{
-    display: grid;
-    border: 1px solid  black;
-    margin: 2px 2px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-areas: 
-    "logo sec-nav"
-    "logo sec-nav"
-    "logo sec-nav";
-}
-.header-logo{
-    grid-area: logo;
-    align-self: center;
-    justify-self: left;
-}
-.header-main-nav{
-    display: none;
-}
-.header-sec-nav{
-    grid-area: sec-nav;
-    align-self: self-start;
-    justify-self: right;
-    padding: 10px;
-}
-header .logo{
-    display: block;
-    width: 90px;
-}
-header nav ul{
-    display: flex;
-    gap: 10px;
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-    ;
-}
-
-header nav ul li{
-    color: #000;
-    display: grid;
-    place-content: center;
-    margin: 0;
-}
-
-
-header nav ul li a{
-    text-decoration: none;
-    white-space: nowrap;
-    color: #000;
-}
 
 /*-------------------------------------------------------------------*/
 /*-------------------------------------------------------------------*/
@@ -81,10 +10,7 @@ header nav ul li a{
 /*-------------------------------------------------------------------*/
 
 /* Estilos del main */
-main{
-    border: 1px solid  black;
-    margin: 2px 2px;
-}
+
 main {
     border: 1px solid  black;
     margin: 2px 2px;    
