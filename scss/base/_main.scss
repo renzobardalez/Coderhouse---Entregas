@@ -25,12 +25,49 @@ form{
     margin: 5px;
 }
 .contact-us_form{
-    margin: 0px;
-    padding: 0px;
+    margin: 5px;
+    padding: 5px;
 }
 .form_label {
     display: block;
     margin-bottom: 10px;
+    border-radius: 5px;
+    outline: none;
+    
+}
+input{
+    width: 30%;
+}
+input[type="submit"]{
+    background-color: #F7F3E7;
+    width: 100px;
+    border-radius: 5px;
+}
+input[type="reset"]{
+    background-color: #F7F3E7;
+    width: 100px;
+    border-radius: 5px;
+}
+button[type="submit"]{
+    background-color: #F7F3E7;
+    width: 100px;
+    border-radius: 5px;
+}
+span {
+    margin: 15px;
+    display: block;
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+input:hover{
+    background-color: #F2E4BF;
+}
+button:hover{
+    background-color: #F2E4BF;
+}
+span:hover{
+    color: purple;
 }
 
     @media screen and (min-width: medida(tablet)){

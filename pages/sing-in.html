@@ -75,17 +75,26 @@
                 <div>
                     <p>Join our team!</p>
                 </div>
-                <div class="container">
-                    <form  action="/signin" method="POST">
+                <div class="container">                    
+                    <!-- Comentado para que no redirija  a una página aún no existente --> 
+                    <!-- <form action="/signin" method="POST"> -->
+                    <form>
                         <div class="form_label">
                             <label for="username"> Username or email: </label>
+                        </div>
+                        <div class="form_label">
                             <input type="text" id="username" name="username" required>
                         </div>
                         <div class="form_label">
                             <label for="password"> Password:</label>
+                        </div>
+                        <div class="form_label">    
                             <input type="password" id="password" name="password" required>
                         </div>
-                        <button type="submit">Sign In</button>
+                        <div class="form_label">    
+                            <span>Forgot pasword?</span>
+                        </div>
+                        <input type="submit" value="Sign In">
                     </form>
                 </div>
             </div>
