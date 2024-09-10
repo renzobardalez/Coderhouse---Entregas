@@ -36,6 +36,9 @@
     grid-template-columns: 1fr;
     gap: $gap-img;
 }
+@mixin h1{
+    margin: 10px;
+}
 @mixin img{
     height: 100%;
     width: 100%;

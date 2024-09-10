@@ -5,6 +5,9 @@
 
 main {
     @include main;
+            h1{
+                @include h1
+            }
             div {
                         img{
                             @include img;
@@ -38,11 +41,11 @@ form{
 input{
     width: 30%;
 }
-input[type="submit"]{
-    background-color: #F7F3E7;
-    width: 100px;
-    border-radius: 5px;
+input[type="text"],
+input[type="email"]{
+    text-align: center;
 }
+input[type="submit"],
 input[type="reset"]{
     background-color: #F7F3E7;
     width: 100px;
