@@ -72,8 +72,13 @@ button:hover{
 span:hover{
     color: purple;
 }
-
-    @media screen and (min-width: medida(tablet)){
+.reserved{
+    display: flex;
+    margin: 10px;
+    font-size: 10px;
+    align-items: center;
+}
+@media screen and (min-width: medida(tablet)){
         main .home_img4{
             display: none;
         }
