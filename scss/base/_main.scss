@@ -5,11 +5,11 @@
 
 main {
     @include main;
-    div {
-            img{
-                @include img
-            }
-    }        
+            div {
+                        img{
+                            @include img;
+                        }
+                }        
 }
 .container-gallery{
     @include main;
